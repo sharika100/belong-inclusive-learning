@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
+  
+  --color-brand-purple: #7c3aed;
+  --color-brand-purple-hover: #6d28d9;
+  --color-brand-purple-light: #ede9fe;
+  
+  --color-brand-blue: #0284c7;
+  --color-brand-blue-hover: #0369a1;
+  --color-brand-blue-light: #e0f2fe;
+  
+  --color-brand-teal: #0d9488;
+  --color-brand-teal-hover: #0f766e;
+  --color-brand-teal-light: #ccfbf1;
+  
+  --color-brand-orange: #ea580c;
+  --color-brand-orange-hover: #c2410c;
+  --color-brand-orange-light: #ffedd5;
+
+  --color-brand-yellow: #eab308;
+  --color-brand-yellow-light: #fef9c3;
+
+  --color-bg-soft: #f8fafc;
+  --color-bg-cream: #fafaf9;
+  
+  --shadow-duo: 0 4px 0 0 rgba(0, 0, 0, 0.05);
+  --shadow-duo-purple: 0 4px 0 0 #5b21b6;
+  --shadow-duo-blue: 0 4px 0 0 #075985;
+  --shadow-duo-teal: 0 4px 0 0 #115e59;
+  --shadow-duo-orange: 0 4px 0 0 #9a3412;
+  
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(0.98); }
+}
+
+/* Custom CSS Scrollbars and Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-soft);
+  color: #1e293b;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Duolingo style button transitions */
+.btn-duo {
+  transition: all 0.15s ease-in-out;
+  transform: translateY(0);
+}
+
+.btn-duo:active {
+  transform: translateY(4px);
+  box-shadow: none !important;
+}
+
+/* Custom Scrollbar for modern feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
