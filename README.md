@@ -299,9 +299,9 @@ BELONG aims to become an **AI-powered Inclusive Teaching Platform** that helps e
 
 # 👩‍💻 Team
 
-IEEE IncluCode 2026 Buildathon Project
+IEEE IncluCode 2026 Buildathon Project by Staff Department of CSE Adi Shankara Institute of Engineering and Technology, Kalady, Ernakulam. 
 
-Developed with ❤️ to empower teachers and create truly inclusive classrooms.
+Developed with ❤️ to empower teachers and create truly inclusive classrooms **from** a group of mothers who are teachers.
 
 ---
 
